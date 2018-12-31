@@ -10,7 +10,7 @@
 #define OP_COUNT 10
 #define FUNC_COUNT 21
 
-char* operators = "+-*/%^$~_!";
+char* operators = "+-*/%^$~_!^";
 char* functions[] = { "sin", "cos", "tan", "asin", "acos", "atan", "sinh", "cosh", "tanh", "asinh", "acosh", "atanh", "exp", "floor", "ceil", "round", "log", "ln", "sqrt", "abs", "sgn" };
 
 int isFunction(char* s) {

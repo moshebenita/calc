@@ -33,7 +33,7 @@ static struct token* opStack;
 static int outCount;
 static double* outStack;
 
-static const int binary[] = { 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 };
+static const int binary[] = { 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 };
 static const int precedence[] = { 0, 0, 1, 1, 1, 2, 3, 4, 4, 5 };
 static const int association[] = { 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 };
 
@@ -91,9 +91,10 @@ int execute(struct token temp) {
 				case '%':
 					result = fmod(d1, d2);
 					break;
-				case '#':
+				case '^':
 					result = pow(d1, d2);
 					break;
+				
 			}
 		}
 		
